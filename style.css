@@ -5,6 +5,10 @@
   padding: 10px;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 hr {
   border: 0;
   clear: both;
@@ -58,9 +62,12 @@ i {
 }
 
 .main-nav li {
-  /* width: 30%; */
   margin: 0;
   padding: 0;
+}
+
+.main-nav li:hover {
+  text-decoration: underline;
 }
 
 img {
@@ -147,16 +154,68 @@ footer > button {
   background-color: #408c99;
 }
 
-.contact-information p:first-child {
-  font-size: 1.3rem;
+#map-form {
+  display: flex;
+}
+
+#map-form a {
+  height: 100%;
+}
+
+#map-form img {
+  height: 100%;
+}
+
+#map-form form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+#map-form .title {
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+#map-form input,
+textarea {
+  margin: 0 auto;
+  width: 285px;
+  height: 50px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+  font-size: 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#map-form input:focus {
+  border-color: #6e8095;
+  outline: none;
+}
+
+#map-form textarea:focus {
+  border-color: #6e8095;
+  outline: none;
+}
+
+fieldset {
+  border: none;
   margin: 0;
   padding: 0;
 }
 
-@media screen and (max-width: 320px) {
-  .main {
-    border: 3px solid red;
-  }
+textarea {
+  resize: none;
+}
+
+.submit-button {
+  width: 285px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 500px) {
