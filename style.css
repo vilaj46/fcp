@@ -153,13 +153,13 @@ footer > button {
   padding: 0;
 }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .main {
     border: 3px solid red;
   }
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .header-items {
     flex-direction: column;
   }
@@ -168,7 +168,7 @@ footer > button {
   }
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .header-items h1:first-child {
     margin: 0;
     padding: 0;
