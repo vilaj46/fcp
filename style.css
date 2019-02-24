@@ -153,6 +153,12 @@ footer > button {
   padding: 0;
 }
 
+@media (max-width: 320px) {
+  .main {
+    border: 3px solid red;
+  }
+}
+
 @media (max-width: 500px) {
   .header-items {
     flex-direction: column;
