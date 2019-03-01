@@ -67,7 +67,7 @@ function setErrorMessage() {
         const fieldset = document.getElementById('assistance-field');
         p.innerText = 'Something went wrong. Please try again.';
         p.id = 'contact-error-message';
-        p.style.cssText = 'margin: 0; padding: 0; color: red;';
+        p.style.cssText = 'margin-top: -25px; color: red;';
         fieldset.append(p);
     }
 }

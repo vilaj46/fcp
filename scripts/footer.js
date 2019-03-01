@@ -9,6 +9,5 @@ document.write(`
         <a href="tel:1-212-594-7902">212-594-7902</a>
     </small>
     ${document.title !== 'Franklin Court Press - Contact Us' ? button : ''}
-    
 </footer>
 `)
