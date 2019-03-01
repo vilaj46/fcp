@@ -123,3 +123,20 @@ textarea {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 415px) {
+  #map-form > section {
+    margin: 10px auto;
+    width: 300px;
+    text-align: center;
+  }
+
+  #map-form > section > a {
+    margin: 0 auto;
+  }
+
+  #google-map {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
