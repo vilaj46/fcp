@@ -118,6 +118,11 @@ footer > h1 {
 .sub-list .title {
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.sub-list p {
+  font-size: 1.1rem;
 }
 
 .resource-list {

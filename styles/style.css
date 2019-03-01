@@ -98,14 +98,6 @@ textarea {
   #map-form > section {
     margin: 20px auto;
   }
-
-  .resource-list {
-    flex-direction: row;
-  }
-
-  .resource-list li {
-    width: 50%;
-  }
 }
 
 @media screen and (max-width: 650px) {
