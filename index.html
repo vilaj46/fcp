@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Include more meta tags-->
     <title>Franklin Court Press - Home</title>
     <meta charset="utf-8" />
     <meta
@@ -15,39 +14,18 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/shared.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Old+Standard+TT"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section class="main">
-      <header>
-        <section class="header-items">
-          <h1><a href="./index.html">Franklin Court Press</a></h1>
-          <section class="contact">
-            <a href="mailto:bushra@fitchgroup.com">
-              <i class="fas fa-envelope"></i>
-              bushra@fitchgroup.com
-            </a>
-            <p style="display: inline-block">
-              &nbsp / <a href="tel:1-212-594-7902">212-594-7902</a>
-            </p>
-          </section>
-        </section>
-        <nav>
-          <!-- Figure out best way to template other pages-->
-          <ul class="main-nav">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./resources.html">Resources</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section class="motivation">
-        <img src="picResized.jpg" alt="Picture" width="100%" />
-        <h4>Dedicated to serving your interests</h4>
-        <hr />
-      </section>
-      <ul class="services">
-        <ul class="list">
+      <script src="./scripts/header.js"></script>
+      <ul class="service-list">
+        <ul class="sub-list">
           <li>
             <p class="title">Paralegal Services</p>
             <p>
@@ -71,7 +49,7 @@
             </p>
           </li>
         </ul>
-        <ul class="list">
+        <ul class="sub-list">
           <li>
             <p class="title">Typsetting Services</p>
             <p>
@@ -95,7 +73,7 @@
             </p>
           </li>
         </ul>
-        <ul class="list">
+        <ul class="sub-list">
           <li>
             <p class="title">Quality</p>
             <p>
@@ -123,18 +101,8 @@
           </li>
         </ul>
       </ul>
-      <footer>
-        <hr />
-        <h1><a href="./index.html">Franklin Court Press</a></h1>
-        <small>
-          229 West 28th Street 8th Floor | New York, New York 10001 | Phone:
-          <a href="tel:1-212-594-7902">212-594-7902</a>
-        </small>
-        <a href="mailto:bushra@fitchgroup.com"
-          ><button class="contact-button">Contact Now</button></a
-        >
-      </footer>
+      <script src="./scripts/footer.js"></script>
     </section>
-    <script src="./script.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

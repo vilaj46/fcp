@@ -1,8 +1,20 @@
+:root {
+  --main-color: #333333;
+}
+
 .main {
   max-width: 960px;
   margin: 4rem auto;
   display: grid;
   padding: 10px;
+  color: var(--main-color);
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 .active {
@@ -10,17 +22,16 @@
 }
 
 hr {
-  border: 0;
-  clear: both;
-  display: block;
-  background-color: #212529;
-  height: 1px;
+  color: var(--main-color);
 }
 
 header h1 {
+  display: inline-block;
   font-size: 2rem;
   margin: 0;
   padding: 0;
+  color: var(--main-color);
+  font-family: "Old Standard TT", "serif", "Times New Roman";
 }
 
 a,
@@ -29,7 +40,7 @@ a:hover,
 a:active,
 a:focus {
   text-decoration: none;
-  color: #212529;
+  color: var(--main-color);
 }
 
 .header-items {
@@ -43,6 +54,7 @@ a:focus {
   padding: 0;
   justify-content: center;
   align-items: center;
+  font-size: 1.33em;
 }
 
 .contact p,
@@ -81,30 +93,6 @@ img {
   text-align: center;
 }
 
-.services {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.list {
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-}
-
-.list li {
-  width: 30%;
-}
-
-.list .title {
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
 footer {
   display: flex;
   flex-direction: column;
@@ -116,11 +104,13 @@ footer {
 footer > h1 {
   margin: 0;
   padding: 0;
+  color: var(--main-color);
 }
 
 small {
   margin: 0;
   padding: 0;
+  color: var(--main-color);
 }
 
 footer > button {
@@ -154,70 +144,6 @@ footer > button {
   background-color: #408c99;
 }
 
-#map-form {
-  display: flex;
-}
-
-#map-form a {
-  height: 100%;
-}
-
-#map-form img {
-  height: 100%;
-}
-
-#map-form form {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 50%;
-  text-align: center;
-}
-
-#map-form .title {
-  margin-bottom: 25px;
-  margin-top: 0;
-}
-
-#map-form input,
-textarea {
-  margin: 0 auto;
-  width: 285px;
-  height: 50px;
-  margin-bottom: 25px;
-  padding-left: 10px;
-  font-size: 15px;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-#map-form input:focus {
-  border-color: #6e8095;
-  outline: none;
-}
-
-#map-form textarea:focus {
-  border-color: #6e8095;
-  outline: none;
-}
-
-fieldset {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-textarea {
-  resize: none;
-}
-
-.submit-button {
-  width: 285px;
-  text-align: center;
-  margin: 0 auto;
-}
-
 @media screen and (max-width: 500px) {
   .header-items {
     flex-direction: column;
@@ -233,11 +159,11 @@ textarea {
     padding: 0;
   }
 
-  .list {
+  .sub-list {
     flex-direction: column;
   }
 
-  .list li {
+  .sub-list li {
     width: 100%;
   }
 }

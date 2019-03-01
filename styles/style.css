@@ -1,0 +1,102 @@
+.service-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-list {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.sub-list li {
+  width: 30%;
+}
+
+.sub-list .title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#map-form {
+  display: flex;
+}
+
+#map-form a {
+  height: 100%;
+}
+
+#map-form img {
+  height: 100%;
+}
+
+#map-form form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+#map-form .title {
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+#map-form input,
+textarea {
+  margin: 0 auto;
+  width: 285px;
+  height: 50px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+  font-size: 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#map-form input:focus {
+  border-color: #6e8095;
+  outline: none;
+}
+
+#map-form textarea:focus {
+  border-color: #6e8095;
+  outline: none;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+.send-button {
+  width: 285px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#honey-im-home {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#honey-im-home input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
