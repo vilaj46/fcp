@@ -6,8 +6,8 @@ import nodemailer from 'nodemailer';
 import cors from 'cors';
 import helmet from 'helmet';
 import dotenv from 'dotenv';
-dotenv.config();
 
+dotenv.config();
 const app = express();
 
 app.use(bodyParser.urlencoded({
@@ -21,9 +21,6 @@ app.use(sanitizer());
 app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
-
-// https://support.google.com/mail/answer/7126229?p=BadCredentials&visit_id=636867760439388060-981344838&rd=2#cantsignin
-// https://support.google.com/accounts/answer/6010255?authuser=1&p=lsa_blocked&hl=en&authuser=1&visit_id=636867771057095818-687891475&rd=1
 
 app.post('/contact', (req, res) => {
     const ip = req.header('x-forwarded-for') || req.connection.remoteAddress;
