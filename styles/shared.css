@@ -102,6 +102,29 @@ footer > h1 {
   color: var(--main-color);
 }
 
+.sub-list {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.sub-list li {
+  width: 30%;
+}
+
+.sub-list .title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.resource-list {
+  align-content: space-between;
+  margin: 0;
+}
+
 small {
   margin: 0;
   padding: 0;
@@ -139,20 +162,36 @@ footer > button {
   background-color: #408c99;
 }
 
-@media screen and (max-width: 500px) {
-  .contact {
-    justify-content: start;
+.resource-list li {
+  text-align: center;
+}
+
+@media (max-width: 1050px) {
+  .main-nav {
+    min-width: 286px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header-items h1:first-child {
+    margin: 0;
+    padding: 0;
   }
 
-  .contact-button {
-    cursor: pointer;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 13px 32px;
+  .sub-list {
+    flex-direction: column;
+  }
+
+  .sub-list li {
     width: 100%;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #3d768a;
+  }
+
+  .resource-list {
+    flex-direction: row;
+  }
+
+  .resource-list li {
+    width: 50%;
   }
 }
 
@@ -174,26 +213,36 @@ footer > button {
     left: 11px;
     margin-top: 10px;
   }
+
+  .resource-list {
+    flex-wrap: wrap;
+    justify-content: space-bween;
+  }
+
+  .resource-list li:last-child {
+    margin: 0 auto;
+  }
 }
 
-@media screen and (max-width: 800px) {
-  .header-items h1:first-child {
-    margin: 0;
-    padding: 0;
+@media screen and (max-width: 500px) {
+  .contact {
+    justify-content: start;
   }
 
-  .sub-list {
-    flex-direction: column;
-  }
-
-  .sub-list li {
+  .contact-button {
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 32px;
     width: 100%;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #3d768a;
   }
-}
 
-@media (max-width: 1050px) {
-  .main-nav {
-    min-width: 286px;
+  .resource-list {
+    flex-direction: column;
+    align-content: center;
   }
 }
 
