@@ -1,10 +1,6 @@
 const contactForm = document.getElementById('contact-form');
 const contactAnchor = document.querySelectorAll('.contact-anchor');
 
-// fix spacing between mail and phone number
-// fix resources page
-    // fit more than one department on line
-
 if (contactAnchor) {
     contactAnchor.forEach(anchor => {
         anchor.style.cssText = 'cursor: pointer;'
