@@ -153,6 +153,14 @@ footer > button {
   }
 }
 
+@media screen and (max-width: 650px) {
+  .main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .header-items h1:first-child {
     margin: 0;
