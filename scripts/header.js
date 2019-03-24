@@ -1,16 +1,14 @@
 let headerPic = './images/picCropped.jpg';
 let logo = './images/logos/FCP_logo.png';
-let homePage = '/';
-let resourcesPage = 'resources';
-let contactPage = 'contact';
+let homePage = '/' || 'index.html';
+let resourcesPage = 'resources' || 'resources.html';
+let contactPage = 'contact' || 'contact.html';
 
-// if (document.title !== 'Franklin Court Press - Home') {
-//   headerPic = '../images/picCropped.jpg';
-//   homePage = '../index.html';
-//   resourcesPage = './resources.html';
-//   contactPage = './contact.html';
-//   logo = '../images/logos/FCP_logo.png';
-// }
+if (window.location.href.includes('Codes')) {
+  homePage = 'index.html';
+  resourcesPage = 'resources.html';
+  contactPage = 'contact.html';
+}
 
 document.write(`
 <header>
