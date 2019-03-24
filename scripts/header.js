@@ -1,16 +1,16 @@
 let headerPic = './images/picCropped.jpg';
-let homePage = './index.html';
-let resourcesPage = './pages/resources.html';
-let contactPage = './pages/contact.html';
+let homePage = 'index.html';
+let resourcesPage = 'resources.html';
+let contactPage = 'contact.html';
 let logo = './images/logos/FCP_logo.png';
 
-if (document.title !== 'Franklin Court Press - Home') {
-  headerPic = '../images/picCropped.jpg';
-  homePage = '../index.html';
-  resourcesPage = './resources.html';
-  contactPage = './contact.html';
-  logo = '../images/logos/FCP_logo.png';
-}
+// if (document.title !== 'Franklin Court Press - Home') {
+//   headerPic = '../images/picCropped.jpg';
+//   homePage = '../index.html';
+//   resourcesPage = './resources.html';
+//   contactPage = './contact.html';
+//   logo = '../images/logos/FCP_logo.png';
+// }
 
 document.write(`
 <header>
