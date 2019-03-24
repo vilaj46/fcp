@@ -1,6 +1,6 @@
 let headerPic = './images/picCropped.jpg';
 let logo = './images/logos/FCP_logo.png';
-let homePage = 'index';
+let homePage = '/';
 let resourcesPage = 'resources';
 let contactPage = 'contact';
 
