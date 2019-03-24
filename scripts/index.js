@@ -24,7 +24,8 @@ showActivePage();
 if (contactForm) {
     contactForm.addEventListener('submit', (event) => {
         event.preventDefault();
-        const url = 'http://localhost:3000/contact';
+        // const url = 'http://localhost:3000/contact';
+        const url = 'https://shielded-sands-99801.herokuapp.com/contact'
         const nameInput = document.querySelector('input[name="name"');
         const numberInput = document.querySelector('input[name="number"');
         const emailInput = document.querySelector('input[name="email"');

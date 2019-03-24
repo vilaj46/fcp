@@ -23,5 +23,8 @@
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.3.4",
     "node": "^11.10.0"
+  },
+  "engines": {
+    "node": "8.12"
   }
 }
