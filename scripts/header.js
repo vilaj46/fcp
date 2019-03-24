@@ -11,12 +11,12 @@ if (document.title !== 'Franklin Court Press - Home') {
   contactPage = './contact.html';
   logo = '../images/logos/FCP_logo.png';
 }
-
+// <a href="${homePage}">
 document.write(`
 <header>
       <section class="header-items">
         <section>
-          <a href="${homePage}">
+          <a href="/">
             <img src="${logo}" id="logo"/>
             <h1>Franklin Court Press</h1>
           </a>
