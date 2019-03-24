@@ -1,6 +1,9 @@
 const contactForm = document.getElementById('contact-form');
 const contactAnchor = document.querySelectorAll('.contact-anchor');
 
+// console.log(window.location);
+// window.location.assign(window.location.href.replace('.html', ''))
+
 if (contactAnchor) {
     contactAnchor.forEach(anchor => {
         anchor.style.cssText = 'cursor: pointer;'

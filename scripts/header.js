@@ -1,8 +1,8 @@
 let headerPic = './images/picCropped.jpg';
-let homePage = 'index.html';
-let resourcesPage = 'resources.html';
-let contactPage = 'contact.html';
 let logo = './images/logos/FCP_logo.png';
+let homePage = 'index';
+let resourcesPage = 'resources';
+let contactPage = 'contact';
 
 // if (document.title !== 'Franklin Court Press - Home') {
 //   headerPic = '../images/picCropped.jpg';
