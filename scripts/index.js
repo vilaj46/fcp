@@ -56,7 +56,6 @@ if (contactForm) {
                     const fieldset = document.getElementById('assistance-field');
                     fieldset.removeChild(document.getElementById('contact-error-message'));
                 }
-                
                 nameInput.value = '';
                 numberInput.value = '';
                 emailInput.value = '';

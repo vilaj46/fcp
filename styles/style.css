@@ -6,7 +6,6 @@
 
 #map-form {
   display: flex;
-  border: 5px solid black;
 }
 
 #map-form > section {
