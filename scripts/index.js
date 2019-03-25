@@ -38,11 +38,12 @@ if (contactForm) {
             assistance: assistanceInput.value,
             honey: honey.value,
         }
+        
         fetch(url, {
             method: "POST", 
-            // headers: {
-            //     "Content-Type": "application/x-www-form-urlencoded"
-            // },
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
             body: JSON.stringify(data)
         })
         .then(response => {
