@@ -40,10 +40,10 @@ if (contactForm) {
         }
         fetch(url, {
             method: "POST", 
-            headers: {
-                "Content-Type": "application/x-www-form-urlencoded"
-            },
-            body: JSON.stringify(data),
+            // headers: {
+            //     "Content-Type": "application/x-www-form-urlencoded"
+            // },
+            body: JSON.stringify(data)
         })
         .then(response => {
             if (response.status === 400) {
@@ -59,7 +59,10 @@ if (contactForm) {
                 assistanceInput.value = '';
             }
         })
-        .catch(error => setErrorMessage());
+        .catch(error => {
+            console.log(error);
+            setErrorMessage()
+        });
     });
 }
 
