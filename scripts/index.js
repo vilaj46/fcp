@@ -49,7 +49,6 @@ if (contactForm) {
             body: JSON.stringify(data)
         })
         .then(response => {
-            console.log(response);
             if (response.status !== 200) {
                 setErrorMessage();
             } else {
@@ -64,13 +63,7 @@ if (contactForm) {
                 assistanceInput.value = '';
             }
         })
-        // .then(response => response.body)
-        // .then((body) => {
-        //     const reader = body.getReader();
-        //     return reader.read().then(({ done, value }) => console.log(value));
-        // })
         .catch(error => {
-            console.log(error);
             setErrorMessage()
         });
     });
