@@ -41,13 +41,16 @@ if (contactForm) {
         
         fetch(url, {
             method: "POST", 
+            mode: 'cors',
             headers: {
-                "Content-Type": "application/x-www-form-urlencoded"
+                // "Content-Type": "application/x-www-form-urlencoded"
+                "Content-Type": "application/json"
             },
             body: JSON.stringify(data)
         })
         .then(response => {
-            if (response.status === 400) {
+            console.log(response);
+            if (response.status !== 200) {
                 setErrorMessage();
             } else {
                 if (document.getElementById('contact-error-message')) {
@@ -55,13 +58,19 @@ if (contactForm) {
                     fieldset.removeChild(document.getElementById('contact-error-message'));
                 }
                 
-                nameInput.value = 'hey';
-                numberInput.value = 'hey';
-                emailInput.value = 'hey';
-                assistanceInput.value = 'hey';
+                nameInput.value = '';
+                numberInput.value = '';
+                emailInput.value = '';
+                assistanceInput.value = '';
             }
         })
+        // .then(response => response.body)
+        // .then((body) => {
+        //     const reader = body.getReader();
+        //     return reader.read().then(({ done, value }) => console.log(value));
+        // })
         .catch(error => {
+            console.log(error);
             setErrorMessage()
         });
     });
