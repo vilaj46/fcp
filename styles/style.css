@@ -41,6 +41,11 @@ textarea {
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 4px;
+  
+}
+
+input:invalid {
+  box-shadow: none;
 }
 
 #map-form input:focus {
