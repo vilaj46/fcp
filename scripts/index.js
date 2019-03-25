@@ -54,11 +54,11 @@ if (contactForm) {
                     const fieldset = document.getElementById('assistance-field');
                     fieldset.removeChild(document.getElementById('contact-error-message'));
                 }
-                setErrorMessage();
-                nameInput.value = '';
-                numberInput.value = '';
-                emailInput.value = '';
-                assistanceInput.value = '';
+                
+                nameInput.value = 'hey';
+                numberInput.value = 'hey';
+                emailInput.value = 'hey';
+                assistanceInput.value = 'hey';
             }
         })
         .catch(error => {
